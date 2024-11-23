@@ -1,8 +1,25 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MapPin, Users, Briefcase, Settings, Wind, ChevronDown, ChevronRight, Mail, Phone, X, Copy, MessageCircle, Clock, Car, Building2, Smartphone, Shield, Heart, Sparkles, Box, Wallet, Wrench, Baby } from 'lucide-react'
+import { 
+  MapPin, 
+  Users, 
+  Settings, 
+  ChevronRight, 
+  Phone, 
+  X, 
+  Copy, 
+  MessageCircle, 
+  Clock, 
+  Car, 
+  Shield, 
+  Heart, 
+  Sparkles,
+  Wallet,
+  Wrench,
+  Baby
+} from 'lucide-react'
 import Image from 'next/image'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
@@ -179,16 +196,8 @@ export function MaqdisCarWebsite() {
     setSelectedFilters(prev => ({ ...prev, [filterType]: value }))
   }
 
-  const openCarDetails = (car: Car) => {
-    setSelectedCar(car)
-  }
-
   const closeCarDetails = () => {
     setSelectedCar(null)
-  }
-
-  const handleReservation = () => {
-    setShowReservationConfirmation(true)
   }
 
   const closeReservationConfirmation = () => {
@@ -686,7 +695,7 @@ export function MaqdisCarWebsite() {
                                 <Clock className="w-6 h-6 text-gray-600" />
                               </div>
                               <div>
-                                <h4 className="font-semibold text-gray-800 mb-1">Heures d'ouverture</h4>
+                                <h4 className="font-semibold text-gray-800 mb-1">Heures d&apos;ouverture</h4>
                                 <p className="text-gray-600">Lun - Sam: 9h00 - 18h00</p>
                                 <p className="text-gray-600">Dimanche: Fermé</p>
                               </div>
@@ -738,8 +747,8 @@ export function MaqdisCarWebsite() {
                   <h2 className="text-3xl font-bold text-gray-800 mb-6">Notre Vision</h2>
                   <p className="text-gray-600 text-lg">
                     Nous aspirons à devenir la référence incontournable de la location de voitures au Maroc, en proposant une
-                    flotte moderne et écologique, tout en mettant l'accent sur l'innovation, la durabilité et la satisfaction de nos
-                    clients. <span className="text-[#A3C528] font-semibold">LILIGO CAR</span> s'engage à être votre partenaire de confiance pour tous vos voyages.
+                    flotte moderne et écologique, tout en mettant l&apos;accent sur l&apos;innovation, la durabilité et la satisfaction de nos
+                    clients. <span className="text-[#A3C528] font-semibold">LILIGO CAR</span> s&apos;engage à être votre partenaire de confiance pour tous vos voyages.
                   </p>
                 </div>
 
@@ -872,7 +881,7 @@ export function MaqdisCarWebsite() {
                 >
                   <h2 className="text-4xl font-bold text-white mb-6">Prêt à Commencer?</h2>
                   <p className="text-gray-300 mb-8">
-                    Découvrez notre sélection de véhicules et profitez d'une expérience de location unique
+                    Découvrez notre sélection de véhicules et profitez d&apos;une expérience de location unique
                   </p>
                   <Button 
                     className="bg-[#A3C528] hover:bg-[#8BA821] text-white px-8 py-4 rounded-full text-lg font-semibold"
@@ -956,10 +965,10 @@ export function MaqdisCarWebsite() {
             <DialogTitle className="text-2xl font-bold text-gray-800">Confirmation de réservation</DialogTitle>
             <DialogDescription>
               <p className="mt-4 text-gray-600">
-                Merci d'avoir choisi <span className="font-bold italic text-[#A3C528]">LILIGO CAR</span> pour votre location de voiture.
+                Merci d&apos;avoir choisi <span className="font-bold italic text-[#A3C528]">LILIGO CAR</span> pour votre location de voiture.
               </p>
               <p className="mt-2 text-gray-600">
-                Pour finaliser votre réservation, veuillez nous contacter par l'un des moyens suivants :
+                Pour finaliser votre réservation, veuillez nous contacter par l&apos;un des moyens suivants :
               </p>
               <div className="mt-6 space-y-4">
                 <Button 
